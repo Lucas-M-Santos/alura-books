@@ -22,9 +22,28 @@
 
 .topicos__link {
     color: var(--branco);
-    padding: 1em;
+    padding: .75em 1em;
     background-color: var(--laranja);
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
+}
+
+.topicos__link:hover {
+    color: var(--laranja);
+    background-color: var(--branco);
+}
+
+@media screen and (min-width: 1024px) {
+
+    .topicos__titulo,
+    .topicos__link {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .topicos {
+        padding: 3em 30vw;
+    }
 }
